@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About TriProof AI</title>
+<style>
+:root{--sky:#0ea5e9;--sky-800:#0c4a6e;--slate-50:#f8fafc;--slate-900:#0f172a;--slate-700:#334155;--slate-500:#64748b}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--slate-900);background:#fff;font-size:16px;line-height:1.6}
+img{max-width:100%;display:block}
+a{color:var(--sky);text-decoration:none}
+a:hover{color:#0284c7}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.site-header{background:#fff;border-bottom:1px solid #e2e8f0}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+.brand{font-size:20px;font-weight:800;letter-spacing:-.02em;color:var(--slate-900)}
+.brand .logo{display:inline-flex;align-items:center;justify-content:center;height:38px;width:38px;border-radius:10px;background:var(--sky);color:#fff;font-weight:800;font-size:18px}
+.nav-links{display:flex;align-items:center;gap:18px}
+.nav-links a{font-size:14px;font-weight:600;color:var(--slate-600);text-decoration:none;padding:6px 2px}
+.nav-links a:hover{color:#0369a1}
+.hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;padding:48px 20px 60px;align-items:center}
+.hero .eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:2px;color:var(--sky);font-weight:700;margin-bottom:12px}
+.hero h1{font-size:clamp(28px,4vw,42px);line-height:1.15;color:var(--slate-900);letter-spacing:-.02em}
+.hero p{color:var(--slate-700);max-width:640px}
+.section{padding:44px 20px 56px}
+.section h2{font-size:26px;letter-spacing:-.01em;color:var(--slate-900)}
+.section .intro{color:var(--slate-600);max-width:760px;margin:14px 0 28px}
+.points{background:var(--slate-50);border:1px solid #e2e8f0;border-radius:14px;padding:6px 0}
+.points .point{display:flex;align-items:center;gap:14px;padding:14px 18px}
+.points .check{display:flex;align-items:center;justify-content:center;height:26px;width:26px;border-radius:50%;background:var(--sky);color:#fff;font-size:13px;font-weight:800}
+.points .point b{color:var(--slate-800)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.step{border:1px solid #e2e8f0;border-radius:14px;padding:20px;background:#fff}
+.step .badge{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--sky);background:#e0f2fe;padding:3px 8px;border-radius:20px}
+.step h3{font-size:18px;color:var(--slate-900);margin:6px 0 8px}
+.step p{color:var(--slate-600);line-height:1.6}
+.tech{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}
+.tech span{font-size:13px;font-weight:600;color:var(--slate-700);background:#f1f5f9;border-radius:8px;padding:8px 12px}
+.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;padding:4px 0 8px}
+.member-card{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:20px;display:flex;flex-direction:column}
+.avatar{display:flex;align-items:center;justify-content:center;border-radius:50%;background:var(--sky);color:#fff;font-size:20px;font-weight:800;height:88px;width:88px;overflow:hidden}
+.avatar img{max-width:100%;height:100%;object-fit:cover}
+.role{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--sky)}
+.member-card h4{font-size:18px;color:var(--slate-900);margin:6px 0 4px}
+.member-card p{color:var(--slate-600);font-size:14px;line-height:1.6}
+.proof{background:linear-gradient(135deg,#0f172a,#1e3a5f);color:#e2e8f0}
+.proof .wrap{padding:36px 20px}
+.proof h2{color:#e2e8f0}
+.proof p{color:#cbd5e1;max-width:720px}
+.proof .cta{display:inline-block;background:var(--sky);color:#fff;border-radius:8px;padding:12px 22px;font-weight:700;text-decoration:none}
+.proof .cta:hover{background:var(--sky-800)}
+footer{margin-top:28px;border-top:1px solid #e2e8f0;padding:20px 20px 26px;font-size:13px;color:var(--slate-500)}.text-center{text-align:center}
+@media (max-width:600px){.hero{padding-top:32px}.member-card{padding:18px}.avatar{height:110px;width:110px;font-size:22px}}
+</style>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap"><a class="brand" href="#"><span class="logo">Tri</span>Proof AI</a></div></header>
+<main id="main">
+<section class="hero">
+  <div class="copy">
+    <p class="eyebrow">TriProof AI</p>
+    <h1>About TriProof AI</h1>
+    <p>Trust and authenticity for every unit, from factory to buyer.</p>
+  </div>
+</section>
+
+<section class="section" id="mission">
+  <h2>Our Mission</h2>
+  <p class="intro">TriProof AI exists to stop the counterfeit goods that erode trust between Bangladeshi factories and the global buyers who depend on the products they make. Every unit is signed with a cryptographic signature under a quota-locked purchase order, so authenticity stays provable at the point of sale even without a network connection. Our tools turn that single signature into a full trust story: offline verification, clone-scan detection, precision recalls, rework lineage, and compliance guidance in the buyer's language.</p>
+  <div class="points">
+    <div class="point"><span class="check">✓</span><b>Quota-locked serial issuance</b></div>
+    <div class="point"><span class="check">✓</span><b>Offline Ed25519 verification</b></div>
+    <div class="point"><span class="check">✓</span><b>Clone-scan detection</b></div>
+    <div class="point"><span class="check">✓</span><b>Precision batch recalls</b></div>
+    <div class="point"><span class="check">✓</span><b>Rework lineage</b></div>
+    <div class="point"><span class="check">✓</span><b>Bilingual compliance guidance</b></div>
+  </div>
+</section>
+
+<section class="section" id="how">
+  <h2>How It Works</h2>
+  <p class="intro">The product runs on three steps. Each step reuses the same signed unit, so trust is never rebuilt by hand.</p>
+  <div class="steps">
+    <div class="step"><div class="badge">Sign</div><h3>Sign</h3><p>A purchase order locks the unit into a quota and the scanner attaches an Ed25519 signature that only that order can authorise.</p></div>
+    <div class="step"><div class="badge">Verify</div><h3>Verify</h3><p>Any buyer or auditor verifies the label instantly, online or offline, and the system flags clone scans in real time.</p></div>
+    <div class="step"><div class="badge">Audit / Recall</div><h3>Audit / Recall</h3><p>When a batch is suspect, TriProof runs a precision recall, reconstructs rework lineage, and issues bilingual compliance guidance in seconds.</p></div>
+  </div>
+</section>
+
+<section class="section" id="tech">
+  <h2>Tech Stack</h2>
+  <p class="intro">Everything below already lives in the repository. No experimental tools were added for this page.</p>
+  <div class="tech">
+    <span>Laravel 12</span><span>PHP sodium / Ed25519</span><span>MySQL &amp; MariaDB</span>
+    <span>Tailwind CSS 4</span><span>Chart.js</span><span>Leaflet</span>
+    <span>Kotlin Android scanner</span><span>AI layer (OpenAI / Gemini, deterministic fallback)</span>
+  </div>
+</section>
+<section class="section" id="team">
+  <h2>Meet the Team</h2>
+  <p class="intro">A small, purpose-built team. Every card below is one of the five people who made the platform.</p>
+  <div class="team-grid">
+<article class="member-card">
+      <div class="avatar"><img src="C:\Users\fmsho\OneDrive\Pictures\Saved Pictures\475058070_1148152726663200_2582878226787507074_n.jpg" alt="Feroz Mahmud"></div>
+      <span class="role">Team Lead</span>
+      <h4>Feroz Mahmud</h4>
+      <p>Leads the build, owns the full stack, and keeps the API, verification and UI consistent across the product.</p>
+    </article>
+    <article class="member-card">
+      <div class="avatar"><img src="C:\Users\fmsho\Downloads\shafayet.jpg" alt="Shafayet Al Hossain"></div>
+      <span class="role">Full Stack Developer &amp; Domain Expert</span>
+      <h4>Shafayet Al Hossain</h4>
+      <p>Builds the core authenticity and verification flows and translates supply-chain domain needs into product features.</p>
+    </article>
+    <article class="member-card">
+      <div class="avatar"><img src="C:\Users\fmsho\OneDrive\Pictures\Saved Pictures\Screenshots 1\remon_isalm.png" alt="Remon Islam"></div>
+      <span class="role">AI &amp; ML Engineer</span>
+      <h4>Remon Islam</h4>
+      <p>Ships the AI layer using OpenAI-compatible / Gemini model access, with a deterministic fallback so guidance never fails.</p>
+    </article>
+    <article class="member-card">
+      <div class="avatar"><img src="C:\Users\fmsho\Downloads\Mashrurul_hasan.jpg" alt="Masrurul Hasan Maktum"></div>
+      <span class="role">Developer &amp; Tester</span>
+      <h4>Masrurul Hasan Maktum</h4>
+      <p>Writes the day-to-day features and the tests that keep them reliable across the stack.</p>
+    </article>
+    <article class="member-card">
+      <div class="avatar"><img src="C:\Users\fmsho\Downloads\4a835583-9ad4-4300-9389-2aa9a43770e5.jpg" alt="Golam Rabbani"></div>
+      <span class="role">DevOps Engineer</span>
+      <h4>Golam Rabbani</h4>
+      <p>Owns deployment, CI/CD, server setup, and keeping the platform reliable in production.</p>
+    </article>
+  </div>
+</section>
+
+<section class="proof">
+  <div class="wrap">
+    <h2>Built Together</h2>
+    <p>TriProof AI is not the work of a single person. It was designed, built, tested and shipped collaboratively by all five of us, across the frontend, the backend, the scanner app and the operations pipeline.</p>
+    <p>If a claim does not trace back to a signed unit, it does not ship. We hold ourselves to that same standard on the product as we do on the code.</p>
+    <a class="cta" href="#">Log in to the verifier</a>
+  </div>
+</section>
+</main>
+<footer><div class="wrap"><p class="text-center">TriProof AI · About</p></div></footer>
+</body>
+</html>
+
+
